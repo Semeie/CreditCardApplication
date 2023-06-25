@@ -3,6 +3,7 @@ package com.springcloud.CreditApplication.Controller;
 import com.springcloud.CreditApplication.DTO.CreditCardRequest;
 import com.springcloud.CreditApplication.Service.CreditCardService;
 import io.swagger.annotations.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/applyCreditCard/v1")
+@Tag(name= "Credit Card Application")
 @Api(tags = "Credit Card Application")
 public class CreditCardController {
     private CreditCardService creditCardService;
