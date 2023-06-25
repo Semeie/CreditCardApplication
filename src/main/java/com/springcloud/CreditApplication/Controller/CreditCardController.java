@@ -2,6 +2,7 @@ package com.springcloud.CreditApplication.Controller;
 
 import com.springcloud.CreditApplication.DTO.CreditCardRequest;
 import com.springcloud.CreditApplication.Service.CreditCardService;
+import io.swagger.annotations.*;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;
@@ -14,9 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/applyCreditCard/v1")
+@Api(tags = "Credit Card Application")
 public class CreditCardController {
     private CreditCardService creditCardService;
 
+    @ApiOperation(value = "Create a credit card application for a new customer")
+    @ApiResponses(value = {@ApiResponse(code=500, message = "Internal Server Error"),
+                  @ApiResponse(code=200, message= "OK", response = String.class)})
     @PostMapping(path = "/applyCreditCard")
     public ResponseEntity<String> createNewCreditCardRequest(@RequestBody CreditCardRequest creditCardRequest){
         if(StringUtils.isEmpty(creditCardRequest.getFirstName())
@@ -25,7 +30,7 @@ public class CreditCardController {
             return ResponseEntity.badRequest().build();
         }
         var applicationRefId = creditCardService.saveApplication(creditCardRequest);
-        return applicationRefId.isEmpty()? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+        return applicationRefId.isEmpty()  ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
                 : ResponseEntity.status(HttpStatus.CREATED).body("Your application reference number is : " + applicationRefId.get());
     }
 }
