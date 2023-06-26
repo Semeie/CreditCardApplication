@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: CreditApplication
+  datasource:
+    url: jdbc:postgresql://localhost:5432/credit-card
+    username: root
+    password: root
+  jpa:
+    generateDdl: true
+    showSql: false
+
+
+
