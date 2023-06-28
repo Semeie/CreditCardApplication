@@ -23,7 +23,7 @@ public class CreditCard{
     private Integer annualIncome;
     @Column(name = "ADDRESS")
     private String address;
-    @Column(name = "isPublished")
+    @Column(name = "IS_PUBLISHED")
     private boolean publishStatus;
     @Column(name = "REFERENCE_ID")
     private String refId;

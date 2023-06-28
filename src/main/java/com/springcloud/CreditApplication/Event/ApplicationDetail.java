@@ -12,6 +12,5 @@ public class ApplicationDetail {
     private String lastName;
     private Integer annualIncome;
     private String address;
-    private boolean publishStatus;
     private String refId;
 }

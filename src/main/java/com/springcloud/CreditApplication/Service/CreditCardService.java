@@ -21,6 +21,7 @@ public class CreditCardService {
         try {
             var creditCard = new CreditCard();
             BeanUtils.copyProperties(creditCardRequest, creditCard);
+            creditCard.setPublishStatus(false);
             creditCard.setRefId(RandomString.make(10));
             var creditCardSaved = creditCardRepository.save(creditCard);
             return Optional.of(creditCardSaved.getRefId());
