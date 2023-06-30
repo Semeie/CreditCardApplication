@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CreditcardApplication/CreditApplication.iml" filepath="$PROJECT_DIR$/CreditcardApplication/CreditApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreditCardVerification/CreditCardVerification.iml" filepath="$PROJECT_DIR$/CreditCardVerification/CreditCardVerification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CreditcardApplication.iml" filepath="$PROJECT_DIR$/.idea/CreditcardApplication.iml" />
+    </modules>
+  </component>
+</project>

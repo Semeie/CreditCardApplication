@@ -10,6 +10,14 @@ spring:
   jpa:
     generateDdl: true
     showSql: false
+  cloud:
+    stream:
+      function:
+        definition: publishNewCreditCardEvent
+      bindings:
+        publishNewCreditCardEvent-out-0:
+          destination: CreditCardApplication
+          group: creditcard
 
 
 
