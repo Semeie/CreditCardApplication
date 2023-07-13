@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 @Builder
 public class NewCreditCardEvent {
-    private eventType event = eventType.New_Credit_Card;
+    private final eventType event = eventType.New_Credit_Card;
     private List<ApplicationDetail> creditCardApplications;
 
     enum eventType{
