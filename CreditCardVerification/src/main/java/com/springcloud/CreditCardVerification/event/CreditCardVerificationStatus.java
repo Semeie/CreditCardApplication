@@ -1,5 +1,13 @@
 package com.springcloud.CreditCardVerification.event;
 
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Builder
 public class CreditCardVerificationStatus {
     private String firstName;
     private String lastName;
