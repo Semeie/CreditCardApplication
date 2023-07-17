@@ -33,11 +33,11 @@ public class CreditCardVerificationService {
             return creditCardVerificationStatus;
         }).collect(Collectors.toList());
 
-        saveCreditCardVerificationStatus(creditCardVerificationStatusList);
-
         var verifyCreditCardEvent = VerifyCreditCardEvent.builder()
                 .creditCardVerificationStatus(creditCardVerificationStatusList)
                 .build();
+
+        saveCreditCardVerificationStatus(creditCardVerificationStatusList);
 
         return verifyCreditCardEvent;
     }
