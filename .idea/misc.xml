@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/CreditcardApplication/pom.xml" />
         <option value="$PROJECT_DIR$/CreditCardVerification/pom.xml" />
+        <option value="$PROJECT_DIR$/CreditCardGenerator/pom.xml" />
       </list>
     </option>
   </component>

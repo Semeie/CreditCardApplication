@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CreditcardApplication/CreditApplication.iml" filepath="$PROJECT_DIR$/CreditcardApplication/CreditApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreditCardGenerator/CreditCardGenerator.iml" filepath="$PROJECT_DIR$/CreditCardGenerator/CreditCardGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/CreditCardVerification/CreditCardVerification.iml" filepath="$PROJECT_DIR$/CreditCardVerification/CreditCardVerification.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CreditcardApplication.iml" filepath="$PROJECT_DIR$/.idea/CreditcardApplication.iml" />
     </modules>

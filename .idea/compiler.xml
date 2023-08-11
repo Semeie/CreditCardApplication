@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CreditApplication" />
+        <module name="CreditCardGenerator" />
         <module name="CreditCardVerification" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CreditApplication" target="17" />
       <module name="CreditCardApplication" target="17" />
+      <module name="CreditCardGenerator" target="17" />
       <module name="CreditCardVerification" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="CreditApplication" options="-parameters" />
       <module name="CreditCardApplication" options="-parameters" />
+      <module name="CreditCardGenerator" options="-parameters" />
       <module name="CreditCardVerification" options="-parameters" />
     </option>
   </component>
