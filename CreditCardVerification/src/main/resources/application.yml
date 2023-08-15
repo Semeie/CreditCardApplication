@@ -2,9 +2,9 @@ server:
   port: 8084
 spring:
   application:
-    name: verify-credit-card-application-service
+    name: generate-credit-card-application-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/credit-card-verification
+    url: jdbc:postgresql://localhost:5432/credit-card-details
     username: root
     password: root
   jpa:
@@ -13,10 +13,10 @@ spring:
   cloud:
     stream:
       function:
-        definition: verifyCreditCardApplication
+        definition: generateCreditCard
       bindings:
         verifyCreditCardApplication-in-0:
-          destination: CreditCardApplication
+          destination: CreditCardVerification
           group: credit-card
         verifyCreditCardApplication-out-0:
           destination: CreditCardVerification
