@@ -50,4 +50,10 @@ public class CreditCardService {
         var randomDataGenerator = new RandomDataGenerator();
         return randomDataGenerator.nextLong(min,max);
     }
+
+    public String getApplicationStatus(String applicationRefId) {
+        log.info("*** Searching application status for reference id : {}" , applicationRefId);
+        var creditCard = creditCardRepo.findByRefId(applicationRefId);
+        return creditCard.getStatus();
+    }
 }
